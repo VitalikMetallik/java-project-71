@@ -4,8 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="43ebc01f-2c30-4160-84dc-0d992d9adc6c" name="Changes" comment="5 step">
+    <list default="true" id="43ebc01f-2c30-4160-84dc-0d992d9adc6c" name="Changes" comment="Check Github Actions">
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hexlet/code/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hexlet/code/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hexlet/code/Differ.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hexlet/code/Differ.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/file1.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/file1.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/file2.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/file2.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +54,12 @@
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="app" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build setup" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="app" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
                 <item name="distribution" type="c8890929:TasksNode$1" />
               </path>
               <path>
@@ -69,6 +81,13 @@
       </state>
     </system>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
@@ -88,11 +107,17 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.App.executor": "Run",
+    "Gradle.Tests.executor": "Run",
     "Gradle.app [:App.main()].executor": "Run",
+    "Gradle.app [buildDependents].executor": "Run",
     "Gradle.app [build].executor": "Run",
     "Gradle.app [check].executor": "Run",
     "Gradle.app [checkstyleMain].executor": "Run",
     "Gradle.app [checkstyleTest].executor": "Run",
+    "Gradle.app [compileJava].executor": "Run",
+    "Gradle.app [dependencies].executor": "Run",
+    "Gradle.app [dependentComponents].executor": "Run",
+    "Gradle.app [init].executor": "Run",
     "Gradle.app [installDist].executor": "Run",
     "Gradle.app [jacocoTestCoverageVerification].executor": "Run",
     "Gradle.app [jacocoTestReport].executor": "Run",
@@ -102,13 +127,32 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/home/flash/java-project-71",
-    "project.structure.last.edited": "Modules",
+    "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2"
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
   }
 }]]></component>
-  <component name="RunManager" selected="Gradle.app [checkstyleTest]">
-    <configuration name="app [check]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/resources" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Gradle.app [build]">
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="hexlet.code.App" />
+      <module name="app.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="hexlet.code.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="app [buildDependents]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -119,7 +163,7 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value="check" />
+            <option value="buildDependents" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -130,7 +174,7 @@
       <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="app [checkstyleMain]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="app [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -141,7 +185,7 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value="checkstyleMain" />
+            <option value="build" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -152,7 +196,7 @@
       <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="app [checkstyleTest]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="app [init]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -163,29 +207,7 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value="checkstyleTest" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>false</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="app [jacocoTestCoverageVerification]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="jacocoTestCoverageVerification" />
+            <option value="init" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -220,11 +242,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.app [checkstyleTest]" />
-        <item itemvalue="Gradle.app [checkstyleMain]" />
-        <item itemvalue="Gradle.app [check]" />
-        <item itemvalue="Gradle.app [jacocoTestCoverageVerification]" />
+        <item itemvalue="Gradle.app [build]" />
+        <item itemvalue="Application.App" />
         <item itemvalue="Gradle.app [test]" />
+        <item itemvalue="Gradle.app [buildDependents]" />
+        <item itemvalue="Gradle.app [init]" />
       </list>
     </recent_temporary>
   </component>
@@ -261,11 +283,29 @@
       <option name="project" value="LOCAL" />
       <updated>1724172739060</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Срусл Пшерги Фсешщты">
+      <option name="closed" value="true" />
+      <created>1724173615317</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1724173615317</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Check Github Actions">
+      <option name="closed" value="true" />
+      <created>1724173729179</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1724173729179</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="5 step" />
-    <option name="LAST_COMMIT_MESSAGE" value="5 step" />
+    <MESSAGE value="Срусл Пшерги Фсешщты" />
+    <MESSAGE value="Check Github Actions" />
+    <option name="LAST_COMMIT_MESSAGE" value="Check Github Actions" />
   </component>
 </project>
