@@ -1,8 +1,9 @@
 package hexlet.code;
+
 import picocli.CommandLine;
+import picocli.CommandLine.Command;
 import picocli.CommandLine.Option;
 import picocli.CommandLine.Parameters;
-import picocli.CommandLine.Command;
 
 import java.util.concurrent.Callable;
 
@@ -14,10 +15,11 @@ public class App implements Callable {
     private String filepath1;
     @Parameters(description = "path to second file")
     private String filepath2;
-    @Option(names = { "-f", "--format" },
+    @Option(names = {"-f", "--format"},
             description = "output format [default: stylish]",
             defaultValue = "stylish")
     private String format = "stylish";
+
     @Override
     public String call() {
         String resultDiff = null;
@@ -29,6 +31,7 @@ public class App implements Callable {
         }
         return resultDiff;
     }
+
     public static void main(String[] args) {
         CommandLine commandLine = new CommandLine(new App());
         System.exit(commandLine.execute(args));
