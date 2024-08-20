@@ -9,7 +9,7 @@ import java.util.Map;
 
 public class Parser {
 
-    public static Map<String, Object[]> parse(String fileString, String fileFormat)
+    public static Map parse(String fileString, String fileFormat)
             throws IOException {
         ObjectMapper objectMapper = switch (fileFormat) {
             case "json" -> new JsonMapper();

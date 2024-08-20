@@ -7,3 +7,12 @@
 
 Differ:
 [![asciicast](https://asciinema.org/a/dDNGY88t3pCsRopoiokiTQwjr.svg)](https://asciinema.org/a/dDNGY88t3pCsRopoiokiTQwjr)
+
+Data Processing
+[![asciicast](https://asciinema.org/a/672852.svg)](https://asciinema.org/a/672852)
+
+Plain Formatter
+[![asciicast](https://asciinema.org/a/672852.svg)](https://asciinema.org/a/672852)
+
+To JSON
+[![asciicast](https://asciinema.org/a/gTXenQl3wpnGH6cltEsmwnmiC.svg)](https://asciinema.org/a/gTXenQl3wpnGH6cltEsmwnmiC)
