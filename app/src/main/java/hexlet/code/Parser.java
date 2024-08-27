@@ -13,7 +13,7 @@ public class Parser {
             throws IOException {
         ObjectMapper objectMapper = switch (fileFormat) {
             case "json" -> new JsonMapper();
-            case "yml" -> new YAMLMapper();
+            case "yml", "yaml"  -> new YAMLMapper();
             default -> throw new RuntimeException("Неподдерживаемый формат: " + fileFormat);
         };
         return objectMapper.readValue(fileString, Map.class);
