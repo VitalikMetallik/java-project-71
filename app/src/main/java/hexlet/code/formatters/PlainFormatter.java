@@ -1,6 +1,5 @@
 package hexlet.code.formatters;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
@@ -12,27 +11,24 @@ public class PlainFormatter {
     public static String format(List<Map<String, Object>> parsedMapList) {
         var resultString = new StringBuilder();
         for (var element : parsedMapList) {
-            switch (element.get("status").toString()) {
-                case "changed":
-                    resultString.append(String.format(
-                            CHANGED_FORMAT,
-                            element.get("key"),
-                            getPlainData(element.get("oldValue")),
-                            getPlainData(element.get("newValue")))
-                    );
-                    break;
-                case "removed":
-                    resultString.append(String.format(REMOVED_FORMAT, element.get("key")));
-                    break;
-                case "added":
-                    resultString.append(String.format(
-                            ADDED_FORMAT,
-                            element.get("key"),
-                            getPlainData(element.get("newValue")))
-                    );
-                    break;
-                default:
-                    break;
+            var status = element.get("status").toString();
+            if ("changed".equals(status)) {
+                resultString.append(String.format(
+                        CHANGED_FORMAT,
+                        element.get("key"),
+                        getPlainData(element.get("oldValue")),
+                        getPlainData(element.get("newValue")))
+                );
+            }
+            if ("removed".equals(status)) {
+                resultString.append(String.format(REMOVED_FORMAT, element.get("key")));
+            }
+            if ("added".equals(status)) {
+                resultString.append(String.format(
+                        ADDED_FORMAT,
+                        element.get("key"),
+                        getPlainData(element.get("newValue")))
+                );
             }
         }
         return resultString.toString().trim();
@@ -41,12 +37,13 @@ public class PlainFormatter {
     public static String getPlainData(Object data) {
         if (data == null) {
             return "null";
-        } else if (data instanceof ArrayList<?> || data instanceof Map<?, ?>) {
-            return "[complex value]";
-        } else if (data instanceof String) {
-            return "'" + data + "'";
-        } else {
-            return data.toString();
         }
+        if (data instanceof List<?> || data instanceof Map<?, ?>) {
+            return "[complex value]";
+        }
+        if (data instanceof String) {
+            return "'" + data + "'";
+        }
+        return data.toString();
     }
 }
